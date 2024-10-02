@@ -49,7 +49,15 @@ En el siguiente documento se documentan los errores encontrados, con su respecti
      lastResult.textContent = '¡Perdiste! El número era ' + randomNumber;
      ```
 ## Sugerencias:
-1. 
+1. Según mi experiencia de trabajo en Banco Industrial y acostumbrado a las metodologías, como Project Manager y QA, solo hacía sugerencias de cambios con las funciones a implementar si era necesario, es decir en el desarrollo presentado se observa que:
+
+(Siguiendo las instrucciones no agregaré desarrollo nuevo, en el ámbito real por temas de roles no era una buena práctica)
+
+a. Se evalúa que ingresan números negativos y positivos sin un límite de caracteres.
+b. Se evalúa que se ingresan caracteres especiales, estos mismos si se reconocen como string pero en un futuro podría ser una vulnerabilidad para el desarrollo.
+c. Se intentó ingresar una cadena <h1>123</h1> y esta misma la reconoce como string, en el desarrollo se sugiere que el campo se reconozca unicamente como numérico y que no acepte caracteres diferentes.
+d. Si se realiza una operación matemática por ejemplo usar una practica de manejo de errores.
+
 
 ## Conclusión
 Se realizaron pruebas exhaustivas desde el punto de vista desarrollador y también desde el punto de vista usuario, puesto que hay muchos usuarios que son atentos al detalle y el simple hecho de no empezar con mayúsculas, una palabra mal escrita o un botón que no funciona, hace desagradable su experiencia con la interacción del software.
